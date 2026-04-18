@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { fetchNotes } from '@/lib/api';
-import { NoteList } from '@/component/NoteList/NoteList';
+import { NoteList } from '@/components/NoteList/NoteList';
 import css from './NoteClient.module.css';
-import Modal from '@/component/Modal/Modal';
-import NoteForm from '@/component/NoteForm/NoteForm';
-import Pagination from '@/component/Pagination/Pagination';
+import Modal from '@/components/Modal/Modal';
+import NoteForm from '@/components/NoteForm/NoteForm';
+import Pagination from '@/components/Pagination/Pagination';
 import Loader from '@/app/notes/loading';
 import Error from '@/app/notes/error';
-import SearchBox from '@/component/SearchBox/SearchBox';
+import SearchBox from '@/components/SearchBox/SearchBox';
 
 export default function NotesClient() {
   const [isModalOpen, setIsModalOpen] = useState(false);
