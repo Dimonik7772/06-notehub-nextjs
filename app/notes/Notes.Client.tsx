@@ -8,8 +8,8 @@ import css from './NoteClient.module.css';
 import Modal from '@/components/Modal/Modal';
 import NoteForm from '@/components/NoteForm/NoteForm';
 import Pagination from '@/components/Pagination/Pagination';
-import Loader from '@/app/notes/loading';
-import Error from '@/app/notes/error';
+import Loader from '@/app/loading';
+import Error from '@/app/notes/[id]/error';
 import SearchBox from '@/components/SearchBox/SearchBox';
 
 export default function NotesClient() {
