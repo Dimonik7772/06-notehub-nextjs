@@ -39,7 +39,7 @@ export default function NotesClient() {
         {data && data.notes.length < 1 && (
           <p className={css.text}>Nothing was found on your request</p>
         )}
-        {isError && <Error message={error.message} />}
+        {isError && <Error error={error} />}
         {isLoading ? (
           <Loader />
         ) : (

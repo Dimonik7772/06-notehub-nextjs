@@ -6,7 +6,7 @@ export default function Header() {
       <header className={css.header}>
          <Link href="/">NoteHub</Link>
          <nav aria-label="Main Navigation">
-            <ul className="css.navigation">
+            <ul className={css.navigation}>
                <li>
                   <Link href="/">Home</Link>
                </li>

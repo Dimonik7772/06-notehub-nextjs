@@ -59,7 +59,7 @@ export default function NoteForm({ onClose }: NoteFormProps) {
                   id="title"
                   type="text"
                   name="title"
-                  className={css.inpput}
+                  className={css.input}
                />
                <ErrorMessage
                   component={"span"}
@@ -91,6 +91,11 @@ export default function NoteForm({ onClose }: NoteFormProps) {
                   <option value="Meeting">Meeting</option>
                   <option value="Shopping">Shopping</option>
                </Field>
+               <ErrorMessage
+                  component={"span"}
+                  name="tag"
+                  className={css.error}
+               />
             </div>
             <div className={css.formGroup}>
                <button
