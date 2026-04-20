@@ -19,11 +19,11 @@ export default function NoteDetailsClient({ id }: NoteDetailsClientProps) {
     queryFn: () => getNoteById(id),
     refetchOnMount: false,
   });
+  if (isLoading) return <Loader />;
+  if (isError) return <Error error={error} />;
   if (!note) return null;
   return (
     <div className={css.container}>
-      {isLoading && <Loader />}
-      {isError && <Error error={error} />}
       <div className={css.item}>
         <div className={css.header}>
           <h2>{note.title}</h2>
